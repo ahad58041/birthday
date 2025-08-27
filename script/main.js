@@ -1,22 +1,3 @@
-// window.addEventListener("load", () => {
-//   Swal.fire({
-//     title: "Do you want to play music in the background?",
-//     icon: "warning",
-//     showCancelButton: true,
-//     confirmButtonColor: "#3085d6",
-//     cancelButtonColor: "#d33",
-//     confirmButtonText: "Yes",
-//     cancelButtonText: "No",
-//   }).then((result) => {
-//     if (result.isConfirmed) {
-//       document.querySelector(".song").play();
-//       animationTimeline();
-//     } else {
-//       animationTimeline();
-//     }
-//   });
-// });
-
 window.addEventListener("load", () => {
   Swal.fire({
     title: "Do you want to play music in the background?",
@@ -247,7 +228,6 @@ const animationTimeline = () => {
       {
         opacity: 0,
         y: -50,
-        // scale: 0.3,
         rotation: 150,
         skewX: "30deg",
         ease: Elastic.easeOut.config(1, 0.5),
@@ -307,7 +287,6 @@ const animationTimeline = () => {
       "+=1"
     );
 
-  // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
     tl.restart();
